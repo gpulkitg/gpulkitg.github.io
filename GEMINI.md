@@ -2,6 +2,29 @@
 
 This is a personal portfolio website for Pulkit Gupta. It is a single-page static website built with HTML, CSS, and a small amount of JavaScript. The page details his professional experience, education, and links to his social media profiles. The site is designed to be simple, clean, and responsive.
 
+## Project Structure
+
+```
+/
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── script.js
+│   └── images/
+│       ├── 256px-MIT_logo.png
+│       ├── bio.webp
+│       ├── gm.png
+│       ├── iitb_logo.webp
+│       ├── soluna.png
+│       └── sysmex.png
+├── .gitignore
+├── CNAME
+├── GEMINI.md
+├── index.html
+└── .git/
+```
+
 ## Key Files
 
 *   `index.html`: The main HTML file containing the structure and content of the website.
