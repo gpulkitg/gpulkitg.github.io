@@ -255,9 +255,13 @@ a:hover {
 /* ========================================
    7. Book Reviews Section
    ======================================== */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: var(--space-md);
+}
+
 .book-card {
-    flex: 0 0 clamp(240px, 30vw, 300px);
-    scroll-snap-align: start;
     background: var(--color-bg-card);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
@@ -304,18 +308,7 @@ a:hover {
 .book-rating {
     color: #f5a623;
     font-size: 0.9rem;
-    margin-bottom: 0.5rem;
     letter-spacing: 1px;
-}
-
-.book-review {
-    font-size: 0.85rem;
-    color: var(--color-text-secondary);
-    line-height: 1.55;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
 }
 
 /* ========================================
@@ -438,10 +431,6 @@ footer {
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    .book-card {
-        flex: 0 0 clamp(220px, 65vw, 280px);
     }
 
     .travel-card {
