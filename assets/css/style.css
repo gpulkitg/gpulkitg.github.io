@@ -408,6 +408,20 @@ a:hover {
     color: #f5a623;
 }
 
+.project-private {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    background: var(--color-border);
+    padding: 0.1rem 0.55rem;
+    border-radius: 100px;
+}
+
 .project-desc {
     color: var(--color-text-secondary);
     font-size: 0.92rem;
