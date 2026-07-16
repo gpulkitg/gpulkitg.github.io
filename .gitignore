@@ -19,5 +19,8 @@ Thumbs.db
 # Backup files
 *.bak
 
+# Python
+__pycache__/
+
 # Claude Code
 .claude/
