@@ -329,6 +329,132 @@ a:hover {
 }
 
 /* ========================================
+   7b. Projects Section
+   ======================================== */
+.project-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md) 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.project-row:first-child {
+    padding-top: 0;
+}
+
+.project-thumb {
+    flex: 0 0 240px;
+    aspect-ratio: 16 / 9;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    transition: transform var(--duration-fast) var(--ease-out-expo),
+                box-shadow var(--duration-fast) var(--ease-out-expo);
+}
+
+.project-thumb:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+.project-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-body {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.project-head {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.project-name {
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.project-lang {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.82rem;
+    color: var(--color-text-muted);
+}
+
+.project-lang .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.project-stars {
+    font-size: 0.82rem;
+    color: #f5a623;
+}
+
+.project-private {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    background: var(--color-border);
+    padding: 0.1rem 0.55rem;
+    border-radius: 100px;
+}
+
+.project-desc {
+    color: var(--color-text-secondary);
+    font-size: 0.92rem;
+    line-height: 1.5;
+}
+
+.project-links {
+    display: flex;
+    gap: var(--space-md);
+    margin-top: 0.2rem;
+}
+
+.project-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.project-links a.live {
+    color: var(--color-tag-blue);
+}
+
+.project-links a.code {
+    color: var(--color-text-secondary);
+}
+
+.project-links a:hover {
+    opacity: 0.7;
+}
+
+/* ========================================
    8. Travels Section
    ======================================== */
 .travel-card {
@@ -448,6 +574,16 @@ footer {
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .project-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .project-thumb {
+        flex-basis: auto;
+        width: 100%;
     }
 
     .travel-card {
